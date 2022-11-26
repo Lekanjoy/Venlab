@@ -29,7 +29,6 @@ header .cta {
 
 .cta a {
     color: white;
-
 }
 
 .cta .flex-item {
@@ -55,6 +54,10 @@ nav {
     justify-content: space-between;
     display: flex;
     column-gap: 40px;
+    color: #334155;
+}
+
+nav a {
     color: #334155;
 }
 
@@ -109,8 +112,8 @@ main .blur2 {
 
 main .spiral {
     position: absolute;
-    top: -8px;
-    left: 208px;
+    top: 23px;
+    left: 198px;
 }
 
 .hero {
@@ -395,10 +398,18 @@ main .spiral {
 }
 
 .reviews {
+    position: relative;
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
 
+}
+
+.reviews img {
+    position: absolute;
+    bottom: -150px;
+    left: 2%;
+    z-index: -1;
 }
 
 .reviews h6 {
@@ -704,8 +715,118 @@ footer .copy p {
     color: #6D6D71;
 }
 
+/*  Get Started Page */
 
+main .getStarted-Intro {
+    margin-top: 122px;
+    width: 100%;
+    height: 280px;
+    background: #666BFF;
+    background-image: url(/assets/Get\ Started/triangle-bg.svg);
+    background-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 48px;
+}
 
+.getStarted-Intro h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 16px;
+}
+
+.getStarted-Intro p {
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+}
+
+.incorp-services {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 120px;
+    margin-bottom: 300px;
+}
+
+.incorp-services h2 {
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    color: #2B2D6B;
+    margin-bottom: 12px;
+    justify-content: start;
+}
+
+.incorp-services-container {
+    width: 930px;
+    border: 1px solid #E8E8E8;
+    border-radius: 7px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    flex-wrap: wrap;
+
+}
+
+.incorp-services-container .service {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E8E8E8;
+    /* margin-bottom: 32px; */
+}
+
+.service .service-details {
+    display: flex;
+    column-gap: 16px;
+    align-items: start;
+}
+
+.service .start {
+    background: #696EFF;
+    border-radius: 24px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 96px;
+    height: 32px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.service ul {
+    list-style-position: inside;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    color: #475569;
+}
+
+.service ul li {
+    margin-bottom: 6px;
+}
+
+.service .info {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    width: 348px;
+    color: #666BFF;
+    margin-left: 20px;
+}
 
 
 
@@ -759,6 +880,10 @@ footer .copy p {
         animation: drop 1s linear;
     }
 
+    nav a {
+        color: #2B2D6B;
+    }
+
     .show {
         display: flex;
     }
@@ -778,6 +903,20 @@ footer .copy p {
         font-size: 14px;
         font-weight: 400;
     }
+
+    main .blur {
+        max-width: 120px;
+        max-height: 120px;
+        top: -80px;
+        left: 50px;
+    }
+
+    main .spiral {
+        max-width: 83px;
+        left: 60px;
+        top: -73px;
+    }
+
 
     main .blur2 {
         display: none;
@@ -817,6 +956,10 @@ footer .copy p {
         margin: 40px auto 0 auto;
         min-height: 100%;
 
+    }
+
+    #TIN {
+        display: none;
     }
 
     .products {
@@ -965,6 +1108,10 @@ footer .copy p {
 
     .reviews {
         margin-bottom: 40px;
+    }
+
+    .reviews img {
+        display: none;
     }
 
     .reviews h6 {
@@ -1142,14 +1289,92 @@ footer .copy p {
         font-weight: 300;
     }
 
-
-
-
-
     @keyframes drop {
         from {
             top: 1px;
         }
 
+    }
+
+    /* Get Started Page */
+    main .getStarted-Intro {
+        background-size: 24px;
+        height: 130px;
+        margin-top: 147px;
+        margin-bottom: 26px;
+    }
+
+    .getStarted-Intro h1 {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 8px;
+    }
+
+    .getStarted-Intro p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .incorp-services {
+        margin-bottom: 33px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 32px;
+    }
+
+    .incorp-services h2 {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    .incorp-services-container {
+       width: 100%;
+        padding: 24px;
+        width: 100%;
+
+    }
+
+    .incorp-services-container .service {
+        flex-direction: column;
+        padding-bottom: 32px;
+
+    }
+
+    .service .service-details {
+        flex-direction: column;
+        row-gap: 16px;
+
+
+    }
+
+    .service-details img {
+        width: 24px;
+        height: 24px;
+
+
+    }
+
+    .service .start {
+        border-radius: 7px;
+        width: 96px;
+        height: 32px;
+        margin-top: 23px;
+    }
+
+    .service ul {
+        margin-left: 8px;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 6px;
+    }
+
+    .service .info {
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 17px;
+        margin-top: 6px;
+        width: 200px;
+        max-width: 100%;
     }
 }
