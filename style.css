@@ -186,34 +186,12 @@ main .spiral {
 
 }
 
-.products-intro .categories {
-    width: 100%;
-    max-width: 0 auto;
-    display: flex;
-    column-gap: 56px;
-    justify-content: center;
-    margin-bottom: 64px;
-}
-
-.products-intro .categories p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #2B2D6B;
-}
-
-.categories .border {
-    border-bottom: 1px solid #2B2D6B;
-}
-
 .incorporation {
     display: flex;
     justify-content: space-between;
     column-gap: 83px;
     padding: 0 170px;
 }
-
 
 .incorporation .main-img {
     min-height: 470px;
@@ -828,24 +806,271 @@ main .getStarted-Intro {
     margin-left: 20px;
 }
 
+/*  Incorporation Page */
+
+main .incorp-hero {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-top: 200px;
+    align-items: center;
+    border-bottom: 1px solid #CBD5E1;
+    padding-bottom: 80px;
+
+}
+
+main .incorporation-container {
+    padding: 0 120px;
+    margin-bottom: 40px;
+}
+
+.incorp-hero .details {
+    width: 540px;
+}
+
+.incorp-hero .details .title {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #334155;
+    margin-bottom: 12px;
+}
+
+.incorp-hero .details .title::before {
+    position: absolute;
+    content: '';
+    width: 110px;
+    height: 10px;
+    left: 16px;
+    top: 8px;
+    background: #F3AAFF;
+    opacity: 0.5;
+}
+
+.incorp-hero .details .intro {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 55px;
+    color: #2B2D6B;
+    margin-bottom: 36px;
+}
+
+.incorp-hero .details .text {
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    color: #334155;
+    margin-bottom: 48px;
+}
+
+.incorp-hero .details a {
+    background: #666BFF;
+    border-radius: 4px;
+    padding: 14px 42px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+main .incorporation-services {
+    padding: 0 120px 80px 120px;
+    position: relative;
+}
+
+main .design {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+
+.incorporation-services .heading {
+    margin-bottom: 82px;
+    text-align: center;
+    margin: 0 auto 64px auto;
+    width: 372px;
+}
+
+.heading p {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.heading p::before {
+    position: absolute;
+    content: '';
+    width: 175px;
+    height: 10px;
+    left: 115px;
+    top: 8px;
+    background: #F3AAFF;
+    opacity: 0.4;
+}
+
+.heading h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #2B2D6B;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 53px;
+}
 
 
+.services-list h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #1E293B;
+    margin-bottom: 16px;
+}
+
+.icon-box {
+    width: 64px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0FF;
+    box-shadow: 0px 4px 12px rgba(156, 159, 255, 0.15);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+
+.bisRegList {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-bottom: 12px;
+}
+
+.bisRegList p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #475569;
+}
+
+.get-started {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.get-started a {
+    text-decoration: underline;
+    color: #666BFF;
+
+}
+
+.TIN,
+.seal {
+    width: 311px;
+}
+
+.TIN p,
+.seal p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #475569
+}
+
+.whyVenlab {
+    display: flex;
+    background: #666BFF;
+    justify-content: space-between;
+    column-gap: 86px;
+    padding: 46px 120px;
+}
+
+.text-details .advantage {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #C195FF;
+}
+
+.text-details h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    width: 440px;
+    margin-bottom: 56px;
+}
+
+.why {
+    padding-left: 24px;
+    border-left: 1px solid #B9BBFF;
+    margin-bottom: 40px;
+
+}
+
+.why h5 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.why p {
+    line-height: 24px;
+    color: #CBD5E1;
+}
+
+.readFAQ-container {
+    width: 100%;
+    margin-bottom: 72px;
+    padding: 30px 120px;
+}
+
+.readFAQ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    border-bottom: 1px solid #CBD5E1;
+    padding-bottom: 30px;
+}
+
+.readFAQ h6 {
+    font-size: 22px;
+    line-height: 35px;
+    color: #1E293B;
+}
+
+.readFAQ a {
+    padding: 10px 30px;
+    background: #666BFF;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    white-space: nowrap;
+}
 
 
+/* Media Queries for Mobile */
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:768px) {
+@media (max-width:767px) {
     header .cta {
         width: 100%;
         height: 96px;
@@ -980,10 +1205,6 @@ main .getStarted-Intro {
         text-align: center;
         color: #697483;
         margin-bottom: 0;
-    }
-
-    .products .categories {
-        display: none;
     }
 
     .incorporation {
@@ -1329,7 +1550,7 @@ main .getStarted-Intro {
     }
 
     .incorp-services-container {
-       width: 100%;
+        width: 100%;
         padding: 24px;
         width: 100%;
 
@@ -1376,5 +1597,442 @@ main .getStarted-Intro {
         margin-top: 6px;
         width: 200px;
         max-width: 100%;
+    }
+
+    /*  Incorporation Page */
+
+    main .incorp-hero {
+        flex-direction: column;
+        margin-top: 200px;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    main .incorporation-container {
+        padding: 0 32px;
+    }
+
+    .incorp-hero .heroImg {
+        width: 100%;
+    }
+
+    .incorp-hero .details {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .incorp-hero .details .title {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .incorp-hero .details .title::before {
+        width: 96px;
+        height: 8px;
+        left: 12px;
+        top: 8px;
+    }
+
+    .incorp-hero .details .intro {
+        margin-bottom: 16px;
+        font-size: 28px;
+        line-height: 42px;
+        color: #192A88;
+    }
+
+    .incorp-hero .details .text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 16px;
+    }
+
+    .incorp-hero .details a {
+        padding: 8px 32px;
+    }
+
+    main .incorporation-services {
+        padding: 0 32px 80px 32px;
+    }
+
+    .incorporation-services .heading {
+        margin-bottom: 40px;
+        width: 236px;
+    }
+
+    .heading p {
+        font-size: 12px;
+        line-height: 14px;
+        font-size: 12px;
+        color: #515A65;
+        margin-bottom: 18px;
+    }
+
+    .heading p::before {
+        width: 156px;
+        height: 8px;
+        left: 49px;
+        top: 8px;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .services-list {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .services-list h3 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .icon-box {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 24px;
+    }
+
+    .TIN,
+    .seal {
+        width: 100%;
+    }
+
+    .bisRegList p,
+    .TIN p,
+    .seal p {
+        font-weight: 300;
+    }
+
+    .whyVenlab {
+        flex-direction: column;
+        padding: 43px 32px;
+    }
+
+    .text-details .advantage {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 10px;
+    }
+
+    .text-details h4 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 40px;
+        width: 70%;
+    }
+
+    .why {
+        padding-left: 16px;
+        margin-bottom: 24px;
+    }
+
+    .why h5 {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .why p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .readFAQ-container {
+        padding: 40px 32px 26px 32px;
+        margin-bottom: 40px;
+    }
+
+    .readFAQ h6 {
+        font-size: 16px;
+        line-height: 18px;
+        color: #2B2D6B;
+    }
+
+    .readFAQ a {
+        padding: 8px 20px;
+    }
+
+    .design {
+        display: none;
+    }
+}
+
+/* Media Queries for Tablets */
+@media (min-width:768px) and (max-width:1224px) {
+    header .nav-header {
+        padding: 0 60px;
+    }
+
+    nav {
+        column-gap: 30px;
+    }
+
+    nav a,
+    nav p {
+        font-size: 14px;
+    }
+
+    main .blur,
+    main .blur2 {
+        top: -105px;
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    main .spiral {
+        top: -71px;
+        left: 81px;
+    }
+
+    .hero {
+        padding: 0 60px;
+        margin-top: 150px;
+    }
+
+    .hero .text {
+        max-width: 400px;
+    }
+
+    .hero .text p {
+        width: auto;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .hero .text h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .hero .mask2 {
+        min-height: auto;
+    }
+
+    .products-intro .text {
+        font-size: 14px;
+    }
+
+    .incorporation {
+        padding: 0 80px;
+        column-gap: 30px;
+    }
+
+    .incorporation .main-img {
+        min-height: 350px;
+        width: 350px;
+    }
+
+    .incorp-details h3 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+
+    .list p {
+        font-size: 12px;
+    }
+
+    .more a {
+        font-size: 14px;
+    }
+
+    .reasons {
+        padding: 0 60px;
+        column-gap: 40px;
+    }
+
+    .reasons .title {
+        height: fit-content;
+    }
+
+    .reasons .title p {
+        font-size: 22px;
+        line-height: normal;
+        min-width: 200px;
+    }
+
+    .value-item {
+        padding-left: 14px;
+    }
+
+    .value-item p {
+        width: 180px;
+        font-size: 14px;
+    }
+
+    .reviews-details {
+        padding: 55px 60px;
+        height: auto;
+        column-gap: 68px;
+    }
+
+    .reviews-details .review-1 {
+        padding-right: 68px;
+    }
+
+    .review .text {
+        font-size: 14px;
+    }
+
+    .faq {
+        padding: 60px;
+        column-gap: 40px;
+    }
+
+    .faq .title p {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .question-item p {
+        font-size: 14px;
+    }
+
+    .subscribe {
+        padding: 0 60px;
+    }
+
+    .subscribe .cta h5 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .subscribe .container {
+        padding: 22px 52px;
+        column-gap: 40px;
+    }
+
+    .subscribe .cta {
+        width: 50%;
+    }
+
+    .container .illust {
+        max-width: 50%;
+    }
+
+    footer {
+        padding: 0 60px 45px 60px;
+    }
+
+    footer .container {
+        column-gap: 60px;
+    }
+
+    .container .footer-items {
+        column-gap: 35px;
+    }
+
+    .footer-items .item h6 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-items .item p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    /* Incorporation Page */
+    main .incorporation-container {
+        padding: 0 60px;
+    }
+
+    main .incorp-hero {
+        column-gap: 18px;
+    }
+
+    .incorp-hero .details {
+        max-width: 400px;
+    }
+
+    .incorp-hero .details .text {
+        width: auto;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .incorp-hero .details .intro {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 18px;
+    }
+
+    .incorp-hero .heroImg {
+        max-width: 300px;
+        height: 340px;
+    }
+
+    main .incorporation-services {
+        padding: 0 60px 40px 60px;
+    }
+
+    .services-list h3 {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .services-list {
+        width: 100%;
+        column-gap: 40px;
+    }
+
+    .icon-box {
+        margin-bottom: 24px;
+    }
+
+    .TIN,
+    .bisReg,
+    .seal {
+        width: 33%;
+    }
+
+    .get-started a {
+        font-size: 14px;
+    }
+
+    .whyVenlab {
+        padding: 40px 60px;
+        column-gap: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .whyVenlab .text-details,
+    .whyVenlab img {
+        width: 50%;
+    }
+
+    .text-details h4 {
+        font-size: 24px;
+        width: 400px;
+        line-height: 36px;
+    }
+
+    .readFAQ-container {
+        padding: 20px 60px;
+    }
+
+    /* Get Started Page */
+    .getStarted-Intro h1 {
+        font-size: 38px;
+    }
+
+    .incorp-services {
+        width: 100%;
+    }
+
+    .incorp-services-container {
+        width: 100%;
+        min-width: 650px;
+    }
+
+    .service ul li {
+        font-size: 14px;
     }
 }
