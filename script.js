@@ -1,3 +1,4 @@
+// Hamburger Menu Functionaity
 const hamburgerMenu = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('menu')
 
@@ -11,4 +12,15 @@ window.addEventListener("click", (e) => {
     mobileMenu.classList.remove("show");
   }
 });
+
+// FAQ dropdowwn Functionality
+let question = document.getElementsByClassName('question');
+
+for (let i = 0; i < question.length; i++) {
+  question[i].addEventListener('click', () => {
+    question[i].classList.toggle('reveal')
+  })
+  
+}
+
 
