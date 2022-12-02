@@ -1,9 +1,15 @@
+@font-face {
+    font-family: GT-Walsheim-Pro;
+    src: url(font/GT-Walsheim-Pro.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
+    font-family: 'GT-Walsheim-Pro', sans-serif;
 }
 
 header {
@@ -70,6 +76,7 @@ nav a {
     outline: none;
     height: 36px;
     width: 133px;
+    white-space: nowrap;
     background: #666BFF;
     border-radius: 4px;
     display: flex;
@@ -156,7 +163,6 @@ main .spiral {
 
 .products {
     width: 100%;
-    /* height: 1649px; */
     background: linear-gradient(180deg, rgba(240, 240, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%);
     padding-top: 37px;
 }
@@ -244,7 +250,6 @@ main .spiral {
     justify-content: space-between;
     column-gap: 12px;
     align-items: start;
-    /* white-space: nowrap; */
 }
 
 .incorp-list .left {
@@ -430,7 +435,6 @@ main .spiral {
     justify-content: space-between;
     column-gap: 128px;
     height: 472px;
-    /* margin-bottom: 120px; */
 }
 
 .reviews-details .review {
@@ -454,7 +458,6 @@ main .spiral {
     letter-spacing: 0.01em;
     color: #F0F0FF;
     margin-bottom: 56px;
-    /* width: 383px; */
 }
 
 .review .id {
@@ -519,7 +522,8 @@ main .spiral {
     height: 50px;
     transition: 1.4s ease-in-out;
 }
-.faq .question.reveal{
+
+.faq .question.reveal {
     height: auto;
 }
 
@@ -527,20 +531,21 @@ main .spiral {
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
-    opacity: 0;
+    display: none;
     margin-top: 8px;
-
+    transition: .5s ease-in-out;
 }
-.question.reveal .answer{
-    opacity: 1;
-    transition: .7s opacity ease-in-out;
+
+.question.reveal .answer {
+    display: block;
 
 }
 
 .question-item img {
     cursor: pointer;
 }
-.question.reveal img{
+
+.question.reveal img {
     transform: rotateX(180deg);
 }
 
@@ -783,7 +788,6 @@ main .getStarted-Intro {
     justify-content: space-between;
     padding-bottom: 16px;
     border-bottom: 1px solid #E8E8E8;
-    /* margin-bottom: 32px; */
 }
 
 .service .service-details {
@@ -1180,7 +1184,8 @@ main .design {
 
 
     .hero .text {
-        width: 90%;
+        width: 100%;
+        max-width: 468px;
     }
 
     .hero .text h1 {
@@ -1261,6 +1266,7 @@ main .design {
         font-size: 16px;
         line-height: 24px;
         padding-bottom: 16px;
+        max-width: 468px;
     }
 
     .incorp-details .incorp-list {
@@ -1349,6 +1355,7 @@ main .design {
         font-size: 14px;
         line-height: 24px;
         width: 100%;
+        max-width: 400px;
     }
 
     .reviews {
@@ -1667,13 +1674,16 @@ main .design {
         font-size: 28px;
         line-height: 42px;
         color: #192A88;
+        max-width: 468px;
     }
 
     .incorp-hero .details .text {
         font-weight: 300;
         font-size: 14px;
         line-height: 21px;
-        margin-bottom: 16px;
+        margin-bottom: 32px;
+        max-width: 468px;
+
     }
 
     .incorp-hero .details a {
@@ -1734,6 +1744,7 @@ main .design {
     .TIN p,
     .seal p {
         font-weight: 300;
+        max-width: 390px;
     }
 
     .whyVenlab {
