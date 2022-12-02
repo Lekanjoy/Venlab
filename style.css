@@ -553,6 +553,7 @@ main .spiral {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 12px;
 
 }
 
